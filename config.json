@@ -1,5 +1,5 @@
 {
-  "title": "Initial processing of the Ramos 2022 dataset",
+  "title": "Fluidigm dataset from Lifang",
   "annotation_reference": "FALSE",
   "DE_method": "Scran",
   "species": "human",
@@ -41,7 +41,7 @@
     "analysis_type": "Scry"
   },
   "scale_data": {
-    "vars.2.regress": "cell.cycle",
+    "vars.2.regress": "NA",
     "marker.path.s": "../cell_cycle_vignette/cell_cycle_orthologs_s.genes.txt",
     "marker.path.g2m": "../cell_cycle_vignette/cell_cycle_orthologs_g2m.genes.txt"
   },
@@ -78,10 +78,10 @@
     "top_n": 11
   },
   "score_and_plot_markers": {
-    "top_n_markers": 10,
+    "top_n_markers": 100,
     "known_markers": "False",
     "known_markers_path": "../known_marker_lists/Gamm_lab_Consolidated_markerList.txt",
-    "cluster_type": "seurat_clusters",
+    "cluster_type": "orig.ident",
     "pairwise": "TRUE",
     "logFC_thresh": 0.5,
     "auc_thresh": 0.5
